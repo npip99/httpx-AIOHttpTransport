@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "httpx-aiohttptransport"
+version = "0.1.0"
+description = "Use `aiohttp` with `httpx` Interface"
+authors = ["Zeyan Li <li_zeyan@icloud.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "httpx_aiohttp_transport" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+httpx = "^0.28.1"
+aiohttp = "^3.11.11"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.1"
+pyright = "^1.1.392.post0"
+mypy = "^1.14.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
