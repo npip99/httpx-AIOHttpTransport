@@ -8,12 +8,16 @@ However, your production code and tests may already heavily rely on `httpx`, mak
 This repo provides a workaround: take advantage of `httpx`'s custom transport capability to use `aiohttp` for the actual
 requests
 
+```shell
+pip install httpx-aiohttptransport
+```
+
 This package supports:
 
 - transport limits (max connection)
 - auth
 - proxy
-- `respx`
+- `respx`. Run `mock_router.set(router.handler)` when you set up the respx mock router. 
 
 Known limitations:
 
