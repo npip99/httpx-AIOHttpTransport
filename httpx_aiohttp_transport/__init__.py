@@ -184,4 +184,7 @@ def create_aiohttp_backed_httpx_client(
     )
 
 
-__all__ = ["create_aiohttp_backed_httpx_client"]
+__all__ = [
+    "create_aiohttp_backed_httpx_client",
+    "mock_router",
+]
